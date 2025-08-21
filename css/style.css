@@ -35,14 +35,11 @@
 	width:100%;
 	min-width:20rem;
 	max-width:30rem;
-	padding:3rem 3rem 3rem 1.25rem;
+	padding:2rem 2rem 2rem 2rem;
 	box-sizing:border-box;
 	backdrop-filter: blur(5px);
 	background-color: rgba(255, 255, 255, 0.025);
 	border-radius: 25px;
-
-
-
 }
 .container-left {
 	position:relative;
@@ -325,6 +322,21 @@ a:hover {
 	body {
 	font-size:1rem;                    		/* 16px */
 	}
+}
+
+/* Responsive Buttons & Container Fix
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  @media (max-width:28rem) {            /* 550px */
+.button,button {
+	max-width:15rem;
+	min-wdith:8rem;
+	width:100%;
+}
+.container {
+	width:80%;
+	min-width:10rem;
+}
+
 }
 
 /* Privacy Page Styles
