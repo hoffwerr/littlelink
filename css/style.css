@@ -5,6 +5,20 @@
 * http://www.opensource.org/licenses/mit-license.php
 */
 
+/* Fade
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
 /* Base Typography Settings
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
@@ -14,13 +28,21 @@
 /* Grid
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .container {
-	position:relative;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width:100%;
-	max-width:37.5rem;     				/* 600px */
-    text-align:center;
-	margin:0 auto;
-	padding:3rem 1.25rem 0 1.25rem;
+	min-width:20rem;
+	max-width:30rem;
+	padding:3rem 3rem 3rem 1.25rem;
 	box-sizing:border-box;
+	backdrop-filter: blur(5px);
+	background-color: rgba(255, 255, 255, 0.025);
+	border-radius: 25px;
+
+
+
 }
 .container-left {
 	position:relative;
@@ -29,6 +51,7 @@
 	text-align:left;
 	margin:0 auto;
 	padding:0 1.25rem;
+
 	box-sizing:border-box;
 }
 .container-left p {
@@ -145,7 +168,7 @@ body {
 
 /* Container spacing */
 .container {
-	padding:var(--spacing-xl) var(--spacing-m) 0 var(--spacing-m);
+	/*padding:var(--spacing-xl) var(--spacing-m) 0 var(--spacing-m);*/
 	text-align:center;
 }
 

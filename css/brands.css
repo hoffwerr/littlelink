@@ -10,7 +10,8 @@
 /* Only include brand-specific button styling here */
 .button,button {
   color:var(--button-text,#000000);
-  background-color:var(--button-background,transparent);
+  /*background-color:var(--button-background,transparent);*/
+  	background-color: rgba(255, 255, 255, 0.05);
 	border:var(--button-border,none);
 	transition:filter 0.2s ease,transform 0.2s ease;
 }
@@ -18,7 +19,7 @@
 /* Global Button Hover Effect
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button:hover,button:hover {
-	filter:brightness(90%);
+	filter:brightness(75%);
 	transform:translateY(-1px);
 }
 
@@ -34,7 +35,15 @@
 /* Default */
 .button.button-default {
 	--button-text:#ffffff;
-	--button-background:#2457F5;
+	--button-background:#212121;
+	--button-border:1px solid #ffffff;
+}
+
+/* Demoreel */
+.button.button-reel {
+	background-image: url("../images/avatar.png");
+	--button-text:#ffffff;
+	--button-background:#212121;
 	--button-border:1px solid #ffffff;
 }
 
@@ -100,7 +109,8 @@
 /* Behance */
 .button-behance {
 	--button-text:#ffffff;
-	--button-background:#0057FF;
+	/*--button-background:#0057FF;*/
+	--button-background:#212121;
   --button-border:1px solid #FFFFFF;
 }
 
@@ -329,7 +339,9 @@
 /* LinkedIn */
 .button-linked {
 	--button-text:#ffffff;
-	--button-background:#2867b2;
+	--button-background:#212121;
+	/*--button-background:#2867b2;*/
+	--button-border:1px solid #FFFFFF;
 }
 
 /* Mailchimp */
